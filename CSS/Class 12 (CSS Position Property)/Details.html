@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property Details</title>
+</head>
+
+<body>
+    <h1>
+        Positioning
+    </h1>
+    <p>
+        The CSS position property allows you to control how and where elements are placed on a web page. It defines
+        whether an element should follow the natural flow of the document or be positioned at a specific spot using
+        coordinates like top, right, bottom, and left.
+    </p>
+    <p>
+        Positioning is one of the most powerful features in CSS because it lets you create layouts, fixed headers, sticky
+        navigation bars, tooltips, modals, and much more.
+    </p>
+    <p style="height: 0.1px;">
+        <b>Syntax</b>
+    </p>
+    <pre>
+        <code>
+    selector {
+        position: value:
+        top: 10px;
+        left: 20px;
+    }
+        </code>
+    </pre>
+    <p>
+        <b>Possible Values:</b>
+    </p>
+    <ul>
+        <li><b>static:</b> Default positioning (normal document flow).</li>
+        <li><b>relative:</b> Positioned relative to its normal position.</li>
+        <li><b>absolute:</b> Positioned relative to the nearest positioned ancestor.</li>
+        <li><b>fixed:</b> Positioned relative to the viewport (stays fixed while scrolling).</li>
+        <li><b>sticky:</b> Acts like relative until a scroll threshold is reached, then “sticks” like fixed.</li>
+    </ul>
+    <h2>
+        1. Static (Default)
+    </h2>
+    <p>
+        By default, all elements have <code>position: static;</code>. They follow the normal document flow without any
+        special positioning.
+    </p>
+    <h2>
+        2. Relative
+    </h2>
+    <p>
+        Elements are positioned relative to the normal position in the document.
+    </p>
+    <p>
+        You can use the top, right, bottom, and left properties to move the element from its original position.
+    </p>
+    <h2>
+        3. Absolute
+    </h2>
+    <p>
+        Elements are positioned relative to the closest positioned ancestor (parent), which means we need to have a parent element with a positioning other than 'static'.
+    </p>
+    <p>
+        <b>Note:</b> An absolutely positioned element is removed from the normal flow.
+    </p>
+    <h2>
+        4. Fixed
+    </h2>
+    <p>
+        An element with position: fixed; is positioned relative to the viewport (the screen itself). It does not move when the page is scrolled.
+    </p>
+    <p>
+        This is useful for creating elements like fixed headers or footers.
+    </p>
+    <h2>
+        5. Sticky
+    </h2>
+    <p>
+        Position sticky is a hybrid between 'relative' and 'fixed'.
+    </p>
+    <p>
+        It allows an element to become "stuck" to the top or bottom of its container when scrolling, but it behaves like relative positioning within the container until it reaches a specified offset.
+    </p>
+    <h2>
+        Float
+    </h2>
+    <p>
+        Although not a position value, the float property is often used alongside positioning to wrap text around images. For more details, follow <a href="https://www.codewithharry.com/tutorial/css-float">CSS Float</a>.
+    </p>
+    <h3>
+        Quick Recap
+    </h3>
+    <ul>
+        <li>Static → Default (normal flow).</li>
+        <li>Relative → Moves element relative to its original spot.</li>
+        <li>Absolute → Positioned relative to nearest ancestor with positioning.</li>
+        <li>Fixed → Stays fixed to the viewport, even on scroll.</li>
+        <li>Sticky → Behaves like relative until a threshold is reached, then sticks.</li>
+        <li>Float → Used for text wrapping (not an actual position type).</li>
+    </ul>
+</body>
+
+</html>
