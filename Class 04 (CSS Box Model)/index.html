@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+</head>
+<body>
+    <h1>CSS BOX MODEL</h1>
+    <p>The CSS Box model defines how elements are redered and how their dimensions are calculated. It describes the structure of an element as a rectangular box that has content, padding, a border, and a margin. The box model consists of four main components, which are</p>
+    <ol>
+        <li>Content
+            <ul type="disc">
+                <li>The innermost component of the box model is the actual content of the elemen. It can be text, image, video, etc.</li>
+                <li>The content area is defined by the <b>width</b> and <b>height</b> properties.</li>
+            </ul>
+        <li>Padding
+            <ul type="disc">
+                <li>The space between the actual content and the border of the element is the padding.</li>
+                <li>The padding area is defined by the property <b>padding</b>. For more details, follow the <a href="https://www.codewithharry.com/tutorial/css-padding">CSS Padding</a> tutorial.</li>
+            </ul>
+        </li>
+        <li>Border
+            <ul type="disc">
+                <li>The border surrounds the content and padding and gives the visual border of the element.</li>
+                <li>The border properties can be controlled using the <b>border</b> keyword. For more details, follow the <a href="https://www.codewithharry.com/tutorial/css-borders">CSS Border</a> tutorial</li>
+            </ul>
+        </li>
+        <li>Margin
+            <ul type="disc">
+                <li>The margin is the space outside the element that separates it from other elements in the layout.</li>
+                <li>The margin of the element is controlled by the <b>margin</b> property. For more details, follow the <a href="https://www.codewithharry.com/tutorial/css-margin">CSS Margin</a> tutorial</li>
+            </ul>
+        </li>
+    </ol>
+   <p>The CSS Box model can be visually represented as:</p>
+   <img height="250" src="box model.png" alt="Box Model">
+   <h3>Calculating the total dimensions of the element</h3>
+   <p>The total width and height of the element is calculated with the formula:</p>
+   <p><b>Total Width </b>= Width + left padding + right padding + left border + right border + left margin + right margin</p>
+   <p><b>Total Height </b>= Height + Top padding + bottom padding + Top border + bottom border + Top margin + bottom margin</p>
+   <h3>Margin Collapse</h3>
+   <img src="margin.png" alt="margin collapse">
+</body>
+</html>
