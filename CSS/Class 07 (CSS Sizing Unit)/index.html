@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Unit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* width: 1912px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 1912px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+            box-sizing: border-box;
+
+        }
+
+        .container div {
+            /* font-size: 2em; */
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid red;
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+
+        .container>div>div {
+            border: 2px solid blue;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>This is a box</h1>
+    </div>
+
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aut eos voluptatibus nostrum earum
+            temporibus ratione esse! In pariatur, sint odio, eveniet cupiditate provident quas illum dolores aliquid
+            alias harum quibusdam quaerat iusto minima ullam eius? Veniam vel fuga tempore, temporibus ea omnis facilis
+            aperiam et quos rem sint praesentium aut incidunt qui eveniet dolor minus.<div>Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. A sed distinctio molestias consequuntur suscipit magni nesciunt facilis
+                labore. Consequuntur iusto quisquam quaerat hic?</div> Expand this lorem999</div>
+    </div>
+
+    <div class="mycont">
+        I am another div
+    </div>
+</body>
+
+</html>
