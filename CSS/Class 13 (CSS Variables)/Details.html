@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables Details</title>
+</head>
+<body>
+    <h1>
+        Variables
+    </h1>
+    <p>
+        CSS Variables (also called <b>custom properties</b>) let you store values (like colors, font sizes, margins) in one place and reuse them throughout your stylesheet. This makes your code <b>cleaner, easier to maintain, and more consistent</b>.
+    </p>
+    <p>
+        Instead of repeating the same color or size everywhere, you can define a variable once and use it multiple times.
+    </p>
+    <p style="height: 0.1px;"><b>Syntax</b></p>
+    <pre>
+        <code>
+    :root {
+    --variable-name: value;
+    }
+        </code>
+    </pre>
+    <ul>
+        <li><code style="background-color: rgb(173, 173, 173);">:root</code> → defines global variables available across the page.</li>
+        <li><code style="background-color: rgb(173, 173, 173);">--variable-name</code> → variable name (always starts with --).</li>
+        <li><code style="background-color: rgb(173, 173, 173);">var(--variable-name)</code> → used to access the variable.</li>
+    </ul>
+    <h3>Why Use CSS Variables?</h3>
+    <ul>
+        <li>Easy to <b>update values</b> (change in one place, reflect everywhere).</li>
+        <li>Useful for <b>themes</b> (light mode, dark mode).</li>
+        <li>Cleaner and more consistent styling.</li>
+        <li>Reduces mistakes from repeating values.</li>
+    </ul>
+    <h2>Quick Recap:</h2>
+    <ul>
+        <li>Define variables with <code style="background-color: rgb(173, 173, 173);">--name</code> inside <code style="background-color: rgb(173, 173, 173);">:root</code>.</li>
+        <li>Use them with <code style="background-color: rgb(173, 173, 173);">var(--name)</code>.</li>
+        <li>Can override inside elements for flexibility.</li>
+        <li>Great for colors, spacing, fonts, themes, etc.</li>
+    </ul>
+</body>
+</html>
