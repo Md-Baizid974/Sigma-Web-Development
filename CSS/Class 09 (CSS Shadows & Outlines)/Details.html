@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows & Outlines</title>
+    <style>
+        table {
+            border: 1px solid black;
+            text-align: left;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shadows</h1>
+    <p>When styling websites, adding depth and focus to elements helps improve the design and user experience. CSS
+        provides two powerful tools for this: shadows (box-shadow, text-shadow) and outlines.</p>
+    <h3>1. Box Shadows</h3>
+    <p><b style="background-color: rgb(156, 147, 147);">box-shadow</b> is a popular CSS property that enables designers
+        to add shadow effects around an element's frame. It can be used to give any element, be it a div, image, or
+        button, a 3D feel or to emphasize on hover. <b>Syntax:</b></p>
+    <p>box-shadow: h-offset v-offset blur spread color inset;</p>
+    <ul>
+        <li><b>h-offset</b> and <b>v-offset</b>: Determines the shadow's horizontal and vertical position.</li>
+        <li><b>blur</b>: The larger the value, the blurrier the shadow.</li>
+        <li><b>spread</b>: Expands or shrinks the shadow size.</li>
+        <li><b>color</b>: Defines the shadow color.</li>
+        <li><b>inset</b>: Makes the shadow inner.</li>
+    </ul>
+    <h3>2. Text Shadows</h3>
+    <p><b style="background-color: rgb(156, 147, 147);">text-shadow</b> is utilized to give shadows specifically to the
+        text. It can elevate the readability of the text or give it an elegant appearance.<b>Syntax:</b></p>
+    <p>text-shadow: h-offset v-offset blur color;</p>
+    <h3>3. Outlines</h3>
+    <p>An <b style="background-color: rgb(156, 147, 147);">outline</b> is a line that is drawn around elements, outside
+        the borders, to make the element "stand out". It's commonly used for accessibility purposes, like highlighting
+        focused elements. <b>Syntax:</b></p>
+    <p>outline: width style color;</p>
+    <h3>4. Key Differences: Outline vs Border</h3>
+    <p>While both can visually appear similar, outlines differ from borders in a few ways:</p>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Border</th>
+            <th>Outline</th>
+        </tr>
+
+        <tr>
+            <th>Position</th>
+            <td>Takes up space inside layout</td>
+            <td>Drawn outside, doesn’t affect layout</td>
+        </tr>
+
+        <tr>
+            <th>Offset</th>
+            <td>No offset property</td>
+            <td><b>outline-offset </b>can push it outward</td>
+        </tr>
+
+        <tr>
+            <th>Width control</th>
+            <td>Can vary on each side</td>
+            <td>Always uniform on all sides</td>
+        </tr>
+
+        <tr>
+            <th>Rounded corners</th>
+            <td>Works with <b>border-radius</b></td>
+            <td>No rounded corners (usually)</td>
+        </tr>
+    </table>
+</body>
+
+</html>
