@@ -1,0 +1,8 @@
+div ul{
+    list-style: none;
+    display: flex;
+}
+
+div ul li{
+    padding: 10px;
+}
