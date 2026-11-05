@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <h1>Loops</h1>
+    <p>We use loops to perform repeated actions for example - if you are designed a task of printing numbers from 1 to
+        100,it will be very hectic to do it manually, loops help us automate such tasks</p>
+
+    <h1>Types of loops in JS</h1>
+    <ul>
+        <li><b>for loop</b> : loop a block of code no of times</li>
+        <li><b>for in loop</b> : loops through the keys of an object</li>
+        <li><b>for of loop</b> : loops through the values of an object</li>
+        <li><b>while loop</b> : loops a block based on a specific condtion</li>
+        <li><b>do while loop</b> : while loop variant which runs atleast once</li>
+    </ul>
+
+    <h2>The For Loop</h2>
+    <p>The <code>for</code> statement creates a loop with 3 optional expressions:</p>
+    <code><pre>for (<i>exp1; exp2; exp3</i>) {
+    //code block to be executed
+}</pre></code>
+    <p><b>exp 1</b> is executed <b>one time</b> before the execution of the code block.</p>
+    <p><b>exp2</b> defines <b>the condition</b> for executing the code block.</p>
+    <p><b>exp3</b> is executed
+        <b>every time</b> the code block has been executed.
+    </p>
+
+    <h2>The For In Loop</h2>
+    <p>The for...in loop iterates over the enumerable properties of an object.</p>
+    <p>The for...in loop is primarily used for objects to access their property names (keys).</p>
+    <code><pre>for( key in object) {
+    //code block to be executed
+}</pre></code>
+    <ul>
+        <li><b>key</b><br>A variable that holds the name (key) of each property during the iterations</li>
+        <li><b>object</b><br>The object whose properties are being iterated over</li>
+    </ul>
+    <p>A JavaScript <code style="color: red;">for in</code> statement loops through the properties of a person object.
+    </p>
+
+    <h2>The For Of Loop</h2>
+    <p>The JavaScript <code style="color: red;">for of</code> statement loops through the values of an iterable object.
+    </p>
+    <p>It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:</p>
+    <code><pre>for (variable of iterable) {
+    // code block to be executed
+}</pre></code>
+    <p><b>variable</b> - For every iteration the value of the next property is assigned to the variable. Variable can be
+        declared with <code>const</code>, <code>let</code> or <code>var</code></p>
+    <p><b>iterable</b> - An object that has iterable properties.</p>
+
+    <h2>The While Loop</h2>
+    <p>The <code>while</code> loop loops through a block of code as long as a specified condition is true.</p>
+    <code><pre>while (condition) {
+      // code block to be executed
+}</pre></code>
+
+    <h2>The Do While Loop</h2>
+    <p>The <code>do while</code> loop is a variant of the while loop. This loop will execute the code block once, before
+        checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+    <code><pre>do {
+    // code block to be executed
+}
+while (condition);
+</pre></code>
+    <p>The <code style="color: red;">do while</code> runs at least once, even if the condition is false from the start.
+    </p>
+    <p>This is because the code block is executed before the condition is tested:</p>
+</body>
+
+</html>
